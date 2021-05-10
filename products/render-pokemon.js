@@ -13,7 +13,7 @@ export function renderPokemon(pokemon) {
     li.appendChild(img);
 
     const p = document.createElement('p');
-    p.textContent = `$${pokemon.price.toFix(2)}`;
+    p.textContent = `$${pokemon.price.toFixed(2)}`;
     li.appendChild(p);
 
     const button = document.createElement('button');
