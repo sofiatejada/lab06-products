@@ -8,7 +8,7 @@ export function renderPokemon(pokemon) {
     li.appendChild(h3);
 
     const img = document.createElement('img');
-    img.src = `../assets/${pokemon.image}`;
+    img.src = `./${pokemon.image}`;
     img.alt = `An image of ${pokemon.name}`;
     li.appendChild(img);
 

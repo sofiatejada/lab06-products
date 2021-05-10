@@ -14,7 +14,7 @@ const gastly = {
 const ralts = {
     id: 'ralts',
     name: 'Ralts',
-    image: 'ralts.png',
+    image: 'ralts.webp',
     description: 'A psychic/fairy type pokémon that evolves into Kirlia at level 20, and Gardevoir at level 30, or if male, Gallade when exposed to a dawn stone.',
     type: 'psychic-fairy',
     level: 5,
