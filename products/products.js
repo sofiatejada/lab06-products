@@ -10,7 +10,6 @@ for (const pokemon of pokémon) {
     
     // render the pokemon listing using renderPokemon function
     const data = renderPokemon(pokemon);
-    console.log(data);
 
     // append the rendered pokemon to the <ul> element
     ul.appendChild(data);

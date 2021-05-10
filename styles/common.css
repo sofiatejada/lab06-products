@@ -1,5 +1,5 @@
 
-body {
+body, html {
     /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
     /* --color1: hsla(349, 69%, 76%, 1);
     --color2: hsla(207, 67%, 44%, 1);
@@ -20,15 +20,25 @@ body {
     
     font-family: 'Titillium Web', sans-serif;
     background-color: var(--color2);
+    /* height: 100%;
+    margin: 0; */
+
 }
 
-main {
+body {
+    background-image: url('../home-wall-2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
-}
+} */
 
 section {
     background-color: var(--color5);

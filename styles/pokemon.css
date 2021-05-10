@@ -37,3 +37,18 @@ time, mark, audio, video {
 ol, ul {
 	list-style: none;
 }
+
+img {
+	height: 100px;
+	width: 100px;
+}
+
+body {
+	color: white;
+}
+
+ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+}
