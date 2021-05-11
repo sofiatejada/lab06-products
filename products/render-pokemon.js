@@ -17,7 +17,7 @@ export function renderPokemon(pokemon) {
     li.appendChild(p);
 
     const button = document.createElement('button');
-    button.textContent = 'Add to Cart';
+    button.textContent = 'Add';
     button.value = pokemon.id;
     p.appendChild(button);
 
