@@ -1,7 +1,7 @@
 export function renderPokemon(pokemon) {
     const li = document.createElement('li');
     li.classList.add('pokemon.type');
-    li.title = pokemon.description;
+    li.title = pokemon.type;
 
     const h3 = document.createElement('h3');
     h3.textContent = pokemon.name;
@@ -20,6 +20,10 @@ export function renderPokemon(pokemon) {
     button.textContent = 'Add';
     button.value = pokemon.id;
     p.appendChild(button);
+
+    const article = document.createElement('article');
+    article.textContent = `${pokemon.description}`;
+    li.appendChild(article);
 
     return li;
 

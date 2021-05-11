@@ -14,4 +14,5 @@ for (const pokemon of pokémon) {
     // append the rendered pokemon to the <ul> element
     ul.appendChild(data);
 
+
 }
