@@ -1,7 +1,7 @@
 // this page is dedicated to the listing of the pokemon available and their array
 
 const gastly = {
-    id: 'gastly',
+    id: 1,
     name: 'Gastly',
     image: 'gastly.png',
     description: 'A ghost/poison type pokémon that evolves into Haunter at level 25, and Gengar when traded.',
@@ -12,7 +12,7 @@ const gastly = {
 };
 
 const ralts = {
-    id: 'ralts',
+    id: 2,
     name: 'Ralts',
     image: 'ralts.webp',
     description: 'A psychic/fairy type pokémon that evolves into Kirlia at level 20, and Gardevoir at level 30, or if male, Gallade when exposed to a dawn stone.',
@@ -23,7 +23,7 @@ const ralts = {
 };
 
 const abra = {
-    id: 'abra',
+    id: 3,
     name: 'Abra',
     image: 'abra.png',
     description: 'A psychic type pokémon that evolves into Kadabra at level 16, and Alakazam when traded.',
@@ -34,7 +34,7 @@ const abra = {
 };
 
 const dratini = {
-    id: 'dratini',
+    id: 4,
     name: 'Dratini',
     image: 'dratini.png',
     description: 'A dragon type pokémon that evolves into Dragonair at level 30, and Dragonite at level 55.',
@@ -45,7 +45,7 @@ const dratini = {
 };
 
 const budew = {
-    id: 'budew',
+    id: 5,
     name: 'Budew',
     image: 'budew.png',
     description: 'A grass/poison type pokémon that evolves into Roselia with high friendship during the day, and Roserade when exposed to a Shiny Stone.',
@@ -56,7 +56,7 @@ const budew = {
 };
 
 const togepi = {
-    id: 'togepi',
+    id: 6,
     name: 'Togepi',
     image: 'togepi.png',
     description: 'A fairy type pokémon that evolves into Togetic when leveled up with high friendship, and Togekiss when exposed to a Shiny Stone.',
