@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../styles/pokemon.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
-    <title>Pokemon Stock</title>
+    <title>Cart</title>
 </head>
 
 <body class="bg">
@@ -19,9 +19,35 @@
         </div>
     </header>
     <main>
-        <h1>Our Current Pokemon In Stock</h1>
-            <ul id="poke-list">
-            </ul>
+        <section>
+            <h1>Your Cart</h1>
+
+            <table>
+                <thead>
+                    <th>Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </thead>
+                <tbody>
+                    <!-- rows go here -->
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td id="total"></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <section>
+            <button>
+                Place Order
+            </button>
+        </section>
+
+
     </main>
     <footer>
             <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
