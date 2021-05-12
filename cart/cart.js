@@ -25,7 +25,7 @@ for (let item of cartItems) {
     //HOW?
     //we are LOOPING thru the items in cartItems array and putting each item into the function renderCartItem that creates the table, for EACH of those items
     const tableRow = renderCartItem(item);
-    console.log(renderCartItem(item));
+    // console.log(renderCartItem(item));
 
     //tableRow is now being appended into the anchor, or the tbody tag in the HTML
     anchor.append(tableRow);

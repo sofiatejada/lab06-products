@@ -7,7 +7,7 @@ const test = QUnit.test;
 test('time to test a function', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const expected = '<li class="pokemon.type" title="ghost-poison"><h3>Gastly</h3><img src="./gastly.png" alt="An image of Gastly"><p>$40.00<button value="gastly">Add</button></p><article>A ghost/poison type pokémon that evolves into Haunter at level 25, and Gengar when traded.</article></li>';
+    const expected = '<li class="pokemon.type" title="ghost-poison"><h3>Gastly</h3><img src="./gastly.png" alt="An image of Gastly"><p>$40.00<button value="1">Add</button></p><article>A ghost/poison type pokémon that evolves into Haunter at level 25, and Gengar when traded.</article></li>';
     
     //Act 
     // Call the function you're testing and set the result to a const

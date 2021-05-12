@@ -33,7 +33,7 @@ export function getCartTotal() {
     return accumulator;
 }
 
-console.table((findById(pokémon, 4)).price);
+// console.table((findById(pokémon, 4)).price);
 
 
 
