@@ -1,3 +1,5 @@
+import { addItemToCart } from '../local-store-utils.js';
+
 export function renderPokemon(pokemon) {
     const li = document.createElement('li');
     li.classList.add('pokemon.type');
@@ -20,6 +22,13 @@ export function renderPokemon(pokemon) {
     button.textContent = 'Add';
     button.value = pokemon.id;
     p.appendChild(button);
+
+    button.addEventListener('click', () => {
+
+        addItemToCart(pokemon.id);
+
+
+    });
 
     const article = document.createElement('article');
     article.textContent = `${pokemon.description}`;

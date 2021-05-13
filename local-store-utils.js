@@ -5,7 +5,7 @@ export function getCart() {
 
     const stringyCartGet = localStorage.getItem('CART');
 
-    const parsedCart = JSON.parse(stringyCart);
+    const parsedCart = JSON.parse(stringyCartGet);
 
     if (parsedCart) {
         return parsedCart;
@@ -39,7 +39,7 @@ export function addItemToCart(itemId) {
     }
 
 
-
+    setCart(cart);
 
 
 }
