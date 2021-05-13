@@ -1,4 +1,4 @@
-import cartItems from './cart-items.js';
+import { getCart } from '../local-store-utils.js';
 import { getCartTotal } from '../utils.js';
 import { renderCartItem } from './render-cart-item.js';
 
@@ -20,6 +20,9 @@ const total = document.getElementById('total');
 //then we create a LOOP
 //WHY? to CYCLE/LOOP thru the cartItems, and we pass EACH cartItem into the function renderCartItem 
 //we are LOOPING THRU CARTITEMS array
+
+const cartItems = getCart();
+
 for (let item of cartItems) {
     //HERE we are placing that rendered tr, into a variable called tableRow
     //HOW?
@@ -45,4 +48,21 @@ const totalPrice = getCartTotal();
 total.textContent = totalPrice.toLocaleString('en-US', {
     style: 'currency',
     currency: 'USD'
+});
+
+const placeOrderSection = document.querySelector('#place-order');
+const button = document.createElement('button');
+
+button.textContent = 'Place Order';
+
+placeOrderSection.append(button);
+
+button.addEventListener('click', () => {
+
+    const alertThing = `${JSON.stringify(cartItems, true, 2)}`;
+
+    alert(alertThing);
+
+
+
 });
