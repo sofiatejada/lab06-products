@@ -2,7 +2,7 @@
 import { renderPokemon } from '../products/render-pokemon.js';
 import pokémon from '../data/pokemon.js';
 import { getCartTotal, findById } from '../utils.js';
-import renderCartItem from '../cart/render-cart-item';
+// import renderCartItem from '../cart/render-cart-item';
 
 
 const test = QUnit.test;
@@ -50,17 +50,17 @@ test('testing findbyid', (expect) => {
     expect.equal(actual, expected);
 });
 
-test('testing rendercartitem', (expect) => {
-    //Arrange
-    // Set up your arguments and expectations
-    const expected = 'Dratini';
+// test('testing rendercartitem', (expect) => {
+//     //Arrange
+//     // Set up your arguments and expectations
+//     const expected = 'Dratini';
     
-    //Act 
-    // Call the function you're testing and set the result to a const
-    const actual = renderCartItem();
+//     //Act 
+//     // Call the function you're testing and set the result to a const
+//     const actual = renderCartItem();
 
-    //Expect
-    // Make assertions about what is expected versus the actual result
-    expect.equal(actual, expected);
-});
+//     //Expect
+//     // Make assertions about what is expected versus the actual result
+//     expect.equal(actual, expected);
+// });
 
