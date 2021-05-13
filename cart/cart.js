@@ -59,9 +59,9 @@ placeOrderSection.append(button);
 
 button.addEventListener('click', () => {
 
-    const alertThing = `${JSON.stringify(cartItems, true, 2)}`;
+    const alertUser = `${JSON.stringify(cartItems, true, 2)}`;
 
-    alert(alertThing);
+    alert(alertUser);
 
 
 
