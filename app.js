@@ -10,6 +10,6 @@ console.log(nav);
 nav.addEventListener('click', () => {
 
     list.classList.toggle('hidden');
-
+  
 
 });
