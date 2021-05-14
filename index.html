@@ -5,22 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Poké-Stand</title>
+    <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
 </head>
 <body>
     <header>
         <h1>Poké-Stand</h1>
     </header>
+    <nav>
+        <button><img id="nav-img" src="nav-lines.webp" /></button>
+        <ul class="list hidden" id="hide">
+            <a href="./index.html"><li>Home</li></a>
+            <a href="./products/index.html"><li>Pokémon</li></a>
+            <a href="./cart/index.html"><li>Cart</li></a>
+        </ul>
+    </nav>
 
     <main>
         <section class="centered">
             <p>
                 <!-- <img class="poke-image" src="assets/fruit-stand.png"> -->
             </p>
-            <p>
-                <a href="./products/index.html">Buy a Pokémon!</a>
-            </p>
         </section>
     </main>
+
+    <script src="./app.js" type="module"></script>
 </body>
 </html>
