@@ -55,13 +55,13 @@ nav {
     left: -100px;
     width: 100px;
     height: 100%;
-    transition: 2s;
+    transition: 1s;
     overflow: visible;
     background-color: rgba(32, 32, 32, 0.534);
 }
 
 .hidden {
-    transition: 2s;
+    transition: 1s;
     left: 0;
     display: block;
 }
