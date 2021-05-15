@@ -1,7 +1,6 @@
 body {
-    padding: 20px 300px 20px 300px;
     display: grid;
-    grid-template-rows: 130px 1fr 100px;
+    grid-template-rows: 5fr 1fr;
     background-color: black;
 }
 
@@ -45,24 +44,26 @@ li {
 }
 
 .nav {
-    position: relative;
+    position: absolute;
     overflow: hidden;
     width: 100px;
-    height: 100px;
+    height: 100%;
 }
 
 nav {
-    position: absolute;
+    position: relative;
     left: -100px;
     width: 100px;
-    height: 100px;
-    background: pink;
+    height: 100%;
     transition: 2s;
+    overflow: visible;
+    background-color: rgba(32, 32, 32, 0.534);
 }
 
 .hidden {
     transition: 2s;
     left: 0;
+    display: block;
 }
 
 .tools {
@@ -72,16 +73,32 @@ nav {
 }
 
 header {
-    margin-bottom: 70px;
+    position: fixed;
+    width: 100%;
     background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 300px;
+    padding-right: 300px;
+    height: 65px;
+    z-index: 3;
 }
 
 main {
-    display:initial;
+    display: grid;
+    grid-template-columns: 200px 1fr;
     background-image: url("../home-wall.jpg");
     background-position: center;
     width: 100%;
+    padding-left: 300px;
+    padding-top: 65px;
+}
+
+li {
+    color: honeydew;
+}
+
+.list {
+    height: 100%;
 }
