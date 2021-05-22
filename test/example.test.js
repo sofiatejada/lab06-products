@@ -2,6 +2,7 @@
 import { renderPokemon } from '../products/render-pokemon.js';
 import pokémon from '../data/pokemon.js';
 import { getCartTotal, findById } from '../utils.js';
+import cartItems from '../cart/cart-items.js';
 // import renderCartItem from '../cart/render-cart-item';
 
 
@@ -29,7 +30,7 @@ test('testing getcarttotal', (expect) => {
     
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = getCartTotal();
+    const actual = getCartTotal(cartItems);
 
     //Expect
     // Make assertions about what is expected versus the actual result
