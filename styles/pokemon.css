@@ -149,3 +149,11 @@ article {
 header, h1 {
 	margin-bottom: 0px;
 }
+
+button:hover {
+	opacity: 70%;
+}
+
+button:active {
+	background-color: purple;
+}

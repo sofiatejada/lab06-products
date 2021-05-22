@@ -1,3 +1,4 @@
+// import pokémon from '../data/pokemon.js';
 import { getCart } from '../local-store-utils.js';
 import { getCartTotal } from '../utils.js';
 import { renderCartItem } from './render-cart-item.js';
@@ -39,16 +40,16 @@ for (let item of cartItems) {
 //HOW?
 //we are calling the getCartTotal() function that has looped through the pokemon objects, matched them to the cartItem id's, and used the findById function to return matching pokemon objects. this object is then USED to grab the PRICE property, and multiply it by the QUANTITY property of cartItems.
 //TLDR: it's grabbing the total of the price of the items in the cartItems array
-const totalPrice = getCartTotal();
+// const totalPrice = getCartTotal();
+
 
 //WHAT is happening here?
 //we are putting the price into the total in the footer of the HTML
 //HOW?
 //by putting the result of totalPrice into the textContent of total
-total.textContent = totalPrice.toLocaleString('en-US', {
-    style: 'currency',
-    currency: 'USD'
-});
+
+
+
 
 const placeOrderSection = document.querySelector('#place-order');
 const button = document.createElement('button');
@@ -58,11 +59,18 @@ button.textContent = 'Place Order';
 placeOrderSection.append(button);
 
 button.addEventListener('click', () => {
-
+    
     const alertUser = `${JSON.stringify(cartItems, true, 2)}`;
-
+    
+    setTimeout(() => window.location = '../', 1000);
     alert(alertUser);
+    
+    localStorage.removeItem('CART');
+    
+});
 
-
-
+const totalPrice = getCartTotal(cartItems);
+total.textContent = totalPrice.toLocaleString('en-US', {
+    style: 'currency',
+    currency: 'USD'
 });

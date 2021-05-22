@@ -1,5 +1,5 @@
 import pokémon from './data/pokemon.js';
-import cartItems from './cart/cart-items.js';
+// import cartItems from './cart/cart-items.js';
 
 export function findById(array, id) {
     // returns first item found that has an .id property that matches the passed in id
@@ -13,7 +13,7 @@ export function findById(array, id) {
     return null;
 }
 
-export function getCartTotal() {
+export function getCartTotal(cartItems) {
     let accumulator = 0;
 
     for (let item of cartItems) {

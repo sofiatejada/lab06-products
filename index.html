@@ -5,22 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Poké-Stand</title>
+    <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
 </head>
 <body>
     <header>
-        <h1>Poké-Stand</h1>
+        <button class="nav-icon"><img id="nav-img" src="nav-lines.webp" /></button>
+        <a href="cart/index.html"><button class="cart-icon"><img class="cart-image title="Cart" src="./cart-icon.png" /></button></a>
     </header>
-
+    
     <main>
+        <section class="nav">
+            <nav class="hidden" id="hide">
+                <ul class="list">
+                    <a href="./index.html"><li>Home</li></a>
+                    <a href="./products/index.html"><li>Pokémon</li></a>
+                    <a href="./cart/index.html"><li>Cart</li></a>
+                </ul>
+            </nav>
+        </section>
         <section class="centered">
+            <h1>Poké-Stand</h1>
             <p>
                 <!-- <img class="poke-image" src="assets/fruit-stand.png"> -->
             </p>
-            <p>
-                <a href="./products/index.html">Buy a Pokémon!</a>
-            </p>
         </section>
     </main>
+
+    <footer>
+        <div>
+
+        </div>
+        <p class="footer">Sofia Tejada © · Alchemy Code Lab</p>
+        <div>
+
+        </div>
+    </footer>
+
 </body>
+<script src="./app.js" type="module"></script>
 </html>
